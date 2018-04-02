@@ -1,0 +1,256 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 20px 70px 20px 70px;
+    font-family: 'PT Serif', serif;
+    line-height: 27px;
+}
+
+h4 {
+    font-family: 'PT Serif', serif;
+}
+
+li {
+    line-height: 24px;
+    font-family: 'PT Serif', serif;
+}
+
+.illustration {
+	position: absolute;
+	overflow-x: hidden;
+	max-width: 300%;
+	max-height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+img.illustration:empty {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.link-type-1 {
+    color: #73B0B3;
+    text-decoration: underline;
+    margin-top: 15px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.link-type-1:hover {
+	color: #3E3E3E;
+	animation: link-fun 3s alternate infinite;
+}
+
+.container-2 {
+	padding-top: 700px;
+}
+
+.title {
+    font-family: 'PT Serif', serif;
+}
+
+.title, .subtext, .author {
+    padding: 0 90px 0 90px;
+}
+
+.subtext, .author {
+    padding: 0 30px 0 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.link-type-2 {
+    color: #73B0B3;
+    text-decoration: underline;
+    margin-top: 15px;
+    font-size: 17px;
+    font-family: 'PT Serif', serif;
+}
+
+.link-type-2:hover {
+	color: #3E3E3E;
+	animation: link-fun 3s alternate infinite;
+}
+
+.animation-1 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.picogram { 
+    height: 30px;
+    width: 55px;
+    background-color: skyblue;
+    margin: 0 auto;
+    position: absolute;
+    font-size: 15px;
+    font-family: 'PT Serif', serif;
+}
+
+.gram {
+	position: absolute;
+    height: 30px;
+    width: 100%;
+    background-color: yellow;
+    margin: 0 auto;
+    font-size: 30px;
+    opacity: 0;
+    animation: square-to-big 2s 3s forwards;
+}
+
+.text {
+	margin: 0 auto;
+	opacity: 100%;
+    text-align: right;
+}
+
+@keyframes square-to-big {
+    0% {
+    	width: 0;
+    	display: none;
+    	opacity: 0;
+    }
+
+    100% {
+        width: 100%;
+        display: all;
+        opacity: .5;
+    }
+}
+
+.thumbnail {
+	margin: 40px;
+	position: relative;
+}
+
+.thumbnail-caption {
+	color: grey;
+	float: left;
+	font-size: 13px;
+	margin-right: 200px;
+}
+
+.Herskovic {
+	padding-right: 40px;
+    width: 400px;
+    float: left;
+}
+
+.clint {
+	padding-right: 40px;
+	width: 400px;
+	float: left;
+}
+
+.jordans {
+    width: 200px;
+    float: left;
+    margin: 20px;
+}
+
+.timeline {
+    float: right;
+    width: 300px;
+    padding-right: 90px;
+}
+
+.animation-2 {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 100%;
+    animation: timeline-down 5s infinite;
+}
+
+@keyframes timeline-down {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 5000%);
+        opacity: 0;
+    }
+}
+
+.animation-3 {
+    height: 30px;
+    width: 40px;
+    background-color: skyblue;
+    border-radius: 50% 50% 50% 0;
+    position: relative;
+    text-align: center;
+    font-size: 8px;
+    font-family: 'Open Sans', sans-serif;
+    left: 50%;
+    animation: hold-me-down 2s ease-in-out alternate infinite;
+}
+
+@keyframes hold-me-down {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 1;
+    }
+}
+
+.animation-4 {
+    height: 30px;
+    width: 40px;
+    background-color: skyblue;
+    border-radius: 50% 50% 0 50%;
+    position: relative;
+    text-align: center;
+    font-size: 8px;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0;
+    left: 50%;
+    animation: she-sucks 2s ease-in-out 1s alternate infinite;
+}
+
+@keyframes she-sucks {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 1;
+    }
+}
+
+.illustration-2 {
+	max-width: 100%;
+}
+
+@media screen and (min-width: 853px) {
+	p {
+    	margin: 20px 240px 20px 240px;
+	}
+
+	.illustration {
+		width: 100%;
+	}
+
+	.container-2 {
+		margin: 0 200px 0 200px;
+	}
+
+	.thumbnail-caption {
+		margin-right: 700px;
+		margin-bottom: 30px;
+}
+}
